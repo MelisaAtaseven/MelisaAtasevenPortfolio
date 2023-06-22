@@ -1,0 +1,165 @@
+
+
+body {
+    overflow: hidden;
+    background-color: #d3c2ba ;
+    /* rgb(133, 133, 133) */
+    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+  
+  .bokeh {
+    height: 100vh;
+    width: 100vw;
+    background-color:#dacecb;
+    /* rgb(167, 167, 167) */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    filter: blur(50px);
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
+  
+  .bokeh circle {
+    animation: rotate 6s linear infinite;
+    fill: rgb(8, 27, 66);
+    opacity: 0.43;
+    transform-origin: 50%;
+  }
+  .bokeh circle:nth-child(2n) {
+    fill: rgb(221, 83, 83);
+    transform-origin: 20% 110%;
+    animation-delay: -3s;
+    animation-duration: 4.1316s;
+    opacity: 0.2;
+  }
+  .bokeh circle:nth-child(3n) {
+    opacity: 0.65;
+    fill: rgb(10, 129, 171);
+    transform-origin: 70% 30%;
+    animation-delay: -1.5s;
+    animation-duration: 7.9998s;
+  }
+  .bokeh circle:nth-child(4n) {
+    fill: rgb(240, 89, 69);
+    transform-origin: 110% 70%;
+    animation-delay: -2s;
+    animation-duration: 4.77996s;
+  }
+  .bokeh circle:nth-child(5n) {
+    fill: rgb(11, 87, 87);
+    transform-origin: 30% 40%;
+  }
+  .bokeh circle:nth-child(6n) {
+    fill: rgb(20, 60, 141);
+    transform-origin: -10% 80%;
+    animation-delay: -7.8s;
+  }
+  .bokeh circle:nth-child(7n) {
+    fill: #ED7270;
+    transform-origin: 70% -10%;
+  }
+  .bokeh circle:nth-child(8n) {
+    fill: rgb(234, 199, 199);
+    transform-origin: -30% 50%;
+    animation-delay: -2.4s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  section {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    font-size: 5vw;
+    text-align: center;
+  }
+  section h1 {
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    font-weight: 100;
+    position: absolute;
+    top: 20vh;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: #eeeceb;
+    text-shadow: 0 0em 0.5em rgb(255, 255, 255);
+    letter-spacing: 0em;
+  }
+  section h1 b {
+    font-weight: 900;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  }/*# sourceMappingURL=scss.css.map */
+
+
+
+
+  /* Box sizing rules */
+
+
+:root {
+  --white: #fff;
+  --black: #111;
+  --pink: #ED7270;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  
+  width: 100vw;
+  position: relative;
+  height: 100vh;
+  padding: 0 20px;
+  margin: 0 auto;
+ 
+  display: grid;
+  place-items: center;
+}
+
+.link {
+  font-family: "Inter";
+  font-size: 2rem;
+  font-weight: bold;
+  color: #eeeceb;
+  text-decoration: none;
+  position: relative;
+}
+.link span, .link i {
+  position: relative;
+}
+.link i {
+  margin-left: 0.5em;
+}
+.link .pink {
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  background-color: var(--pink);
+  position: absolute;
+  top: 50%;
+  transform: translatey(-50%);
+  left: -0.65em;
+}
+
+@media screen and (min-width: 390px) and (max-width: 844px) {
+  .link {
+    font-size:1.5rem;
+  }
+
+  
+}

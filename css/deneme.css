@@ -1,0 +1,200 @@
+
+  /* section hero */
+  .c-banner {
+    position: relative;
+    padding: 150px ;
+    padding-left: 20%;
+}
+
+.c-banner__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 0;
+}
+
+.c-banner__subtitle {
+    font-weight: 700;
+    position: relative;
+    max-width: 305px;
+    letter-spacing: 5;
+    font-size: 1.1rem;
+}
+
+.c-banner__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start ;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.c-banner__title {
+    font-size: 2rem;
+    margin-top: -10px;
+    width: 100%;
+}
+
+.c-banner__copy {
+    margin-top: 40px;
+    max-width: 455px;
+}
+
+.c-banner__details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 40px 0 -40px;
+    width: 100%;
+}
+
+.c-banner__details .c-address {
+    margin: 0 40px 40px 0;
+}
+
+.c-banner--landing .c-banner__content {
+    max-width: 760px;
+}
+
+.c-banner--landing .c-banner__title {
+    font-size: 3rem;
+}
+
+.c-banner--home {
+    margin-bottom: 150px;
+}
+
+.c-banner--home .c-banner__container {
+    grid-template-columns: 150px 1fr;
+    grid-gap: 70px;
+}
+
+.c-banner--home .c-banner__content {
+    flex-direction: row;
+    width: 100%;
+    max-width: 100%;
+}
+
+.c-banner--home .c-banner__title {
+    max-width: 700px;
+}
+
+.c-banner--home .c-big-button {
+    margin-left: 100px;
+}
+
+@media (max-width: 991.98px) {
+    .c-banner {
+        padding: 90px 20px 0 !important;
+    }
+
+    .c-banner__container {
+        grid-template-columns: 100%;
+        width: 80%;
+    }
+
+    .c-banner__content {
+        max-width: 100%;
+    }
+
+    .c-banner__title {
+        margin-top: 0;
+    }
+
+    .c-banner__subtitle {
+        margin-bottom: 30px;
+        max-width: 50%;
+    }
+
+    .c-banner--home {
+        margin-bottom: 50px;
+    }
+
+    .c-banner--home .c-banner__container {
+        grid-template-columns: 100%;
+        grid-gap: 25px;
+    }
+
+    .c-banner--home .c-banner__content {
+        flex-direction: column;
+    }
+
+    .c-banner--home .c-big-button {
+        margin-top: 20px;
+        margin-left: auto ;
+    }
+
+    .c-banner__details {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .c-banner {
+        padding: 50px 10px 0;
+    }
+
+    .c-banner:not(.c-banner--home) .c-banner__subtitle {
+        display: none;
+    }
+
+    .c-banner__subtitle {
+        margin-bottom: 0;
+    }
+
+    .c-banner__container {
+        width: 90%;
+    }
+}
+
+
+
+
+<!-- Gallery -->
+  <div id="gallery" class="row justify-content-center">
+    <div class="col-lg-6 col-md-12 mb-5 mb-lg-2">
+        <figure class="snip1321"><img 
+            class="w-100 shadow-1-strong rounded mb-4"
+             src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+            />
+            <figcaption><i class="ion-upload"></i>
+              <h4>Inverness    </h4>
+              <h2>McKenzie</h2>
+            </figcaption><a href="#"></a>
+          </figure>
+      <!-- <img
+        src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Boat on Calm Water"
+      /> -->
+  
+      <img
+       src="https://picsum.photos/id/684/600/400" 
+        class="w-100  shadow-1-strong rounded mb-4  "
+        alt="Wintry Mountain Landscape"
+        />     
+    </div>
+  
+    <div class="col-lg-4 mb-4 mb-lg-0">
+      <img
+        src="https://picsum.photos/id/784/600/400"
+        class="w-100 shadow-1-strong rounded mb-4"
+        alt="Mountains in the Clouds"
+        
+      />
+  
+      <img
+      src="https://picsum.photos/id/784/600/400"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+      
+    />
+
+      <img
+      src="https://picsum.photos/id/784/600/400"
+      class="w-100 shadow-1-strong rounded mb-4"
+      alt="Mountains in the Clouds"
+      
+    />
+    </div>
+  </div>
