@@ -12,6 +12,23 @@ else if (hrs >= 11 && hrs <= 24)
 document.getElementById('greetings').innerHTML ='<b>' + greet + '</b>';
 
 ///////////////////////
+
+// scroll top button
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 3000){
+      $('#topBtn').fadeIn();
+    } else{
+      $('#topBtn').fadeOut();
+    }
+  });
+
+  $("#topBtn").click(function(){
+    $('html ,body').animate({scrollTop : 0},600);
+  });
+});
+
 var lang = {
     "html": "",
     "css": "",
@@ -105,18 +122,3 @@ document.getElementById("mail-button").addEventListener("click", function() {
 });
 
 
-// scroll top button
-$(document).ready(function(){
-
-  $(window).scroll(function(){
-    if($(this).scrollTop() > 70){
-      $('#topBtn').fadeIn();
-    } else{
-      $('#topBtn').fadeOut();
-    }
-  });
-
-  $("#topBtn").click(function(){
-    $('html ,body').animate({scrollTop : 0},1000);
-  });
-});
