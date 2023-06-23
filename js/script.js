@@ -75,7 +75,7 @@ $( document ).ready(function() {
     }); // -- End window scroll --
   });
 
-
+// gallery 
   document.addEventListener("DOMContentLoaded", function() {
     animateGallery();
   });
@@ -99,3 +99,24 @@ $(".hover").mouseleave(
     }
   );
   
+// contact
+document.getElementById("mail-button").addEventListener("click", function() {
+  window.location.href = "atasevenmelisa2@gmail.com";
+});
+
+
+// scroll top button
+$(document).ready(function(){
+
+  $(window).scroll(function(){
+    if($(this).scrollTop() > 70){
+      $('#topBtn').fadeIn();
+    } else{
+      $('#topBtn').fadeOut();
+    }
+  });
+
+  $("#topBtn").click(function(){
+    $('html ,body').animate({scrollTop : 0},1000);
+  });
+});
