@@ -105,6 +105,7 @@ $( document ).ready(function() {
 // gallery 
 document.addEventListener("DOMContentLoaded", function() {
   var menuItems = document.querySelectorAll("nav ul li a");
+  var workButton = document.querySelector(".big-button");
 
   menuItems.forEach(function(item) {
     item.addEventListener("click", function(event) {
@@ -113,6 +114,13 @@ document.addEventListener("DOMContentLoaded", function() {
       var target = this.getAttribute("href"); // Tıklanan öğenin hedef bağlantısını alır
       animateGallery(target); // Galeri animasyonunu başlatır
     });
+  });
+
+  workButton.addEventListener("click", function(event) {
+    event.preventDefault(); // Sayfanın yenilenmesini engeller
+
+    var target = this.getAttribute("href"); // Tıklanan öğenin hedef bağlantısını alır
+    animateGallery(target); // Galeri animasyonunu başlatır
   });
 });
 
@@ -125,7 +133,7 @@ function animateGallery(target) {
   setTimeout(function() {
     gallery.style.opacity = 1;
     gallery.style.transform = "translateY(0)";
-    window.location.href = target; 
+    window.location.href = target;
   }, 700);
 }
 
