@@ -17,21 +17,20 @@
 <body>
     
 <!-- menu -->
-    <nav class="nav">
-        <a href="" class="logo">
-            <span class="name"> MELİSA</span>
-            <span class="surname">ATASEVEN</span>
-        </a>
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-        
-          <li><a href="#" >Skilss</a></li>
-          <li><a href="#" >About</a></li>
-          <li><a href="#" >Work</a></li>
-          <li><a href="#" >Contact</a></li>
-        </ul>
-    </nav>
+<nav class="nav">
+  <a href="" class="logo">
+    <span class="name">MELİSA</span>
+    <span class="surname">ATASEVEN</span>
+  </a>
+  <input class="menu-btn" type="checkbox" id="menu-btn" />
+  <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+  <ul class="menu">
+    <li><a href="#skills-section" onclick="smoothScroll('#skills-section')">Skills</a></li>
+    <li><a href="#experience" onclick="smoothScroll('#experience')">Experience</a></li>
+    <li><a href="#work-gallery" onclick="smoothScroll('#work-gallery')">Work</a></li>
+    <li><a href="#contact" onclick="smoothScroll('#contact')">Contact</a></li>
+  </ul>
+</nav>
 <!-- end menu -->
 
 <!-- section hero -->
@@ -57,7 +56,7 @@
 <!-- end section hero -->
 
 <!-- section skilss  -->
-    <section class="skills-section" >
+    <section class="skills-section" id="skills-section" >
     
 <ul class="skills-bar-container">
     <div>
@@ -152,7 +151,7 @@
 <!-- end section skilss  -->
 
 <!-- experience -->
-    <section class="experience">
+    <section class="experience" id="experience">
     <div class="content">
       <h1>Experiences</h1>
       <ul>
@@ -196,7 +195,7 @@
 <!-- end resume  -->
 
 <!-- work  Gallery--> 
-    <section class="work-gallery">
+    <section class="work-gallery"  id="work-gallery">
  
     <div class="row">
         <div class="col text-center">
@@ -265,7 +264,7 @@
 <!-- end work  Gallery--> 
 
 <!-- footer -->
-    <section class="footer-section">
+    <section class="footer-section" id="contact">
 <footer >
         
   <ul class="social-icons">

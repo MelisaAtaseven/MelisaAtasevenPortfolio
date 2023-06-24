@@ -92,22 +92,44 @@ $( document ).ready(function() {
     }); // -- End window scroll --
   });
 
-// gallery 
-  document.addEventListener("DOMContentLoaded", function() {
-    animateGallery();
-  });
-  
-  function animateGallery() {
-    var gallery = document.getElementById("gallery");
-    gallery.style.opacity = 0;
-    gallery.style.transform = "translateY(100px)";
-    gallery.style.transition = "opacity 0.5s, transform 0.5s";
-    
-    setTimeout(function() {
-      gallery.style.opacity = 1;
-      gallery.style.transform = "translateY(0)";
-    }, 500);
+  // menu
+  function smoothScroll(target) {
+    const element = document.querySelector(target);
+    if (element) {
+      window.scrollTo({
+        behavior: "smooth",
+        top: element.offsetTop
+      });
+    }
   }
+// gallery 
+document.addEventListener("DOMContentLoaded", function() {
+  var menuItems = document.querySelectorAll("nav ul li a");
+
+  menuItems.forEach(function(item) {
+    item.addEventListener("click", function(event) {
+      event.preventDefault(); // Sayfanın yenilenmesini engeller
+
+      var target = this.getAttribute("href"); // Tıklanan öğenin hedef bağlantısını alır
+      animateGallery(target); // Galeri animasyonunu başlatır
+    });
+  });
+});
+
+function animateGallery(target) {
+  var gallery = document.getElementById("gallery");
+  gallery.style.opacity = 0;
+  gallery.style.transform = "translateY(100px)";
+  gallery.style.transition = "opacity 0.5s, transform 0.5s";
+
+  setTimeout(function() {
+    gallery.style.opacity = 1;
+    gallery.style.transform = "translateY(0)";
+    window.location.href = target; 
+  }, 700);
+}
+
+
 
   /* Demo purposes only */
 $(".hover").mouseleave(
