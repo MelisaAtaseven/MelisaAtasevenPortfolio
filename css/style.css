@@ -373,6 +373,7 @@ body {
     min-width: 300px;
 margin:auto ;
 padding:100px 0  ;
+
     list-style: none;
   }
   .skills-bar-container li {
@@ -1323,10 +1324,7 @@ margin-left:-40px;
       width: 100%;
     }
    
-    .skills-section{
-      height: 130vh;
-
-    }
+    
     .skills-bar-container{
       left:40%;
     }
