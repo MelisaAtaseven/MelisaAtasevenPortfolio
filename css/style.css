@@ -1323,6 +1323,8 @@ footer {
   /* ############################
           RESPONSIVE
   ############################### */
+
+  
   @media screen and (max-width: 389px) {
     body {
       font-size: 14px;
