@@ -22,7 +22,7 @@ body {
     display: block;
     justify-content: space-between;
     z-index: 3;
-    position: fixed;
+    /* position: fixed; */
     background-color: #fff;
   }
   .nav ul {
